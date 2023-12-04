@@ -1,5 +1,18 @@
 <?php
+    $dsn = "mysql:host=localhost;dbname=websitedb";
+    $dbusername = "root";
+    $dbpassword = "";
 
-require_once __DIR__.'/../model/category_list.php';
-$categories = getCategories();
-require __DIR__.'/../view/category_list.php';
+    try {
+        $pdo = new PDO($dsn, $dbusername, $dbpassword);
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        echo "Connection Success";
+    } catch (PDOException $e){
+        echo "Connection failed: " . $e->getMessage();
+        exit(); // Termina la ejecución si no se puede conectar a la base de datos
+    }
+
+    require_once __DIR__.'/../model/categories.php';
+    $categorias = getCategories($pdo);
+    require __DIR__.'/../view/category_list.php';
+
