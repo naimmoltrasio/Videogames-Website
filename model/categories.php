@@ -7,7 +7,7 @@
     function getCategories($pdo): array
     {
         try {
-            $stmt = $pdo->query("SELECT * FROM category");
+            $stmt = $pdo->query("SELECT * FROM categories");
             $categorias = $stmt->fetchAll(PDO::FETCH_ASSOC);
             return $categorias;
         } catch (PDOException $e) {

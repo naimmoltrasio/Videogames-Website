@@ -4,9 +4,9 @@
 
             <?php foreach ($products as $product): ?>
 
-                <div class="grid-item" id="product<?php echo $product['id_producte']?>">
-                    <img src="../img/<?php echo $product['Foto']?>" alt="photo" class="games">
-                    <a><?php echo $product['Titulo']?></a><br>
+                <div class="grid-item" id="product<?php echo $product['game_id']?>">
+                    <img src="../img/<?php echo $product['photo_url']?>" alt="photo" class="games">
+                    <a><?php echo $product['game_name']?></a><br>
 
                 </div>
             <?php endforeach;?>
@@ -21,10 +21,10 @@
 <script type="text/javascript">
     $(document).ready(function () {
         <?php foreach ($products as $product): ?>
-        $('#product<?php echo $product['id_producte']?>').click(function () {
+        $('#product<?php echo $product['game_id']?>').click(function () {
             $('.grid-container').hide();
-            $('.description').load('../index.php?action=detalle_producte&id_producte=<?php echo $product['id_producte']?>', function () {
-                console.log('Details <?php echo $product['id_producte']?>');
+            $('.description').load('../index.php?action=detalle_producte&id_producte=<?php echo $product['game_id']?>', function () {
+                console.log('Details <?php echo $product['game_id']?>');
             });
         });
         <?php endforeach; ?>
