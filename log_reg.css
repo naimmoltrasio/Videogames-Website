@@ -1,0 +1,47 @@
+#login_items {
+    border: 3px solid #ffffff;
+    background-color: #330636;
+    padding: 20px;
+    width: 25%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+    flex-direction:column;
+    align-items:center;
+}
+
+body{
+    background: linear-gradient(to right, #a41cb2, #330636);
+}
+#login_items h1 {
+    margin-bottom: 10px;
+}
+label {
+    margin-bottom: 30px; /* esto agregará 10px de margen en la parte inferior de cada label */
+}
+.label-container{
+    margin-bottom: 10px;
+}
+#lower{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.to_register, .OC{
+    color: white;
+}
+
+
+
+
+@media only screen and (min-width: 1280px) and (max-width: 1920px) {
+
+}
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+#perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+p {
+    margin-bottom: 5px;
+}
+.form label {
+    display: block; /* hace que el label ocupe toda la línea */
+    font-weight: bold; /* opcional, para darle más énfasis al label */
+}
+
+.form-group input {
+    /* estilos para la barra de entrada de texto */
+}
+#perfil{
+    border: 3px solid #ffffff;
+    background-color: #330533;
+    padding: 20px;
+    width: 25%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+}
+
+body{
+    background: linear-gradient(to right, #a41cb2, #330636);
+}
+label {
+    color: #fcfcfc; /* o cualquier otro color */
+}
+
+#title-box {
+    background: linear-gradient(to right, #6b0b73, #c024d0); /* color de fondo */
+    border: 3px solid #030003; /* bordes del cuadrado */
+    padding: 5px; /* espacio interno */
+    text-align: center; /* para centrar el texto */
+
+}
+#perfil h1 {
+    padding-top: 3px; /* reducir el tamaño de la parte superior */
+    padding-left: 20px; /* aumentar el espacio entre el borde izquierdo y el texto */
+    padding-right: 20px; /* aumentar el espacio entre el borde derecho y el texto */
+}
+
+.modification input[type="submit"] {
+    width: 100%; /* para hacer el botón más ancho */
+    padding: 10px; /* para aumentar el tamaño del botón */
+    font-size: 1.3em; /* para aumentar el tamaño de la letra */
+    margin-top: 10px; /* para mover el botón hacia abajo */
+}
+.modification {
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (min-width: 1280px) and (max-width: 1920px) {
+    /* Estilos para resolución de 1280px a 1920px */
+}
+
+
+
+
+
