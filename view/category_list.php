@@ -22,8 +22,10 @@
     $(document).ready(function () {
         <?php foreach ($categorias as $categories): ?>
         $("#category<?php echo $categories['category_id']?>").click(function () {
-            $('.products').load('../index.php?action=productes&category_id=<?php echo $categories['category_id']?>', function () {
+
+            $('.products').load('../index.php?action=products&category_id=<?php echo $categories['category_id']?>', function () {
                 console.log('Carrega Productes <?php echo $categories['category_id']?>');
+
             });
         });
         <?php endforeach; ?>

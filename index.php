@@ -1,14 +1,13 @@
 <?php
     session_start() or die('Error iniciando gestor de variables de sesión');;
     $action = $_GET['action'] ?? null;
-
     switch ($action){
         case 'filter':
             require __DIR__.'/resource_filter.php';
             break;
         case 'validation':
             require __DIR__.'/resource_validation.php';
-        case 'productes':
+        case 'products':
             require __DIR__.'/resource_product_list.php';
             break;
         case 'detalle_producte':

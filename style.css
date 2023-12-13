@@ -9,7 +9,7 @@
 
 header{
     height: 100px;
-    background-color: #AD2BFF;
+    background-color: #7353BA;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@ header label{
 
 .menu ul ul{
     display: none;
-    background-color: #AD2BFF;
+    background-color: #472A85;
 }
 
 .menu a{
@@ -58,7 +58,7 @@ header label{
 /* BODY */
 
 body{
-    background-color: #571680;
+    background-color: #7353BA;
 }
 
 .portada {
@@ -128,7 +128,6 @@ body{
     display: flex;
     margin-top: 20px;
     flex-direction:column;
-    align-items:center;
 }
 
 #register label {

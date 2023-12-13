@@ -5,7 +5,7 @@
      * @return array
      */
 
-    function getProductsByCategory(int $category_id, $pdo): array
+    function getProductsByCategory($category_id, $pdo): array
     {
         try {
             $stmt = $pdo->prepare("SELECT * FROM Games WHERE category_id = :category_id");
