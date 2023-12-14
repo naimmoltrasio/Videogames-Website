@@ -12,12 +12,12 @@
 </head>
 <body>
     <header>
-            <label for="btn-menu" class="icon-menu"></label>
+            <a href="../index.php" class="logo">
+                <img src="../img/web/logo.jpg" alt="page-logo">
+            </a>
             <nav class="menu">
-                <a href="../index.php" class="logo">
-                    <img src="../img/logo.png" alt="page-logo">
-                </a>
                 <?php if (isset($_SESSION['mail'])) { ?>
+                    <input type="text" placeholder="Search" class="search-bar">
                     <img src="/../img/fotoperfil/<?php echo $_SESSION['photo']; ?>" width="63px" height="60px">
                     <ul>
                         <li class="submenu"><a href="#">MENU<span class="icon-down-open"></span></a>
@@ -31,12 +31,19 @@
                     <a href="../view/cartPage.php" class="nav-link">CART</a>
                 <?php }
                 else { ?>
+                    <label>
+                        <input type="text" placeholder="Search" class="search-bar">
+                    </label>
                     <a href="../view/login.php" class="nav-link">LOGIN</a>
                     <a href="../view/registre.php" class="nav-link">REGISTER</a>
                     <a href="../view/cartPage.php" class="nav-link">CART</a>
                 <?php } ?>
             </nav>
     </header>
+    <div class="banner-roulette">
+        <img src="../img/web/banner1.jpg" alt="banner1">
+    </div>
+
 </body>
 <footer>
     <?php if(isset($_SESSION['carrito'])){ ?>

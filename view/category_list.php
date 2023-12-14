@@ -1,5 +1,4 @@
 <div class="categories">
-    <h1>CATEGORY LIST</h1>
     <div class="category_elements">
         <?php foreach ($categorias as $categories):
             $nom_categoria = htmlentities($categories['category_name'], ENT_QUOTES | ENT_HTML5); ?>

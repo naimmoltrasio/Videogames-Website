@@ -2,42 +2,52 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     font-family: Arial Black,Arial Bold,Gadget,sans-serif;
     list-style: none;
 }
 
 header{
-    height: 100px;
+    /*height: 100px;*/
     background-color: #7353BA;
     color: #fff;
     display: flex;
-    justify-content: center;
-}
-
-header label{
-    font-size: 30px;
-    cursor: pointer;
-
-}
-
-.menu{
-    display: flex;
-    font-size: 30px;
+    justify-content: space-between;
     align-items: center;
 }
 
-.menu ul ul{
-    display: none;
-    background-color: #472A85;
+header img{
+    max-height: 100px;
+    max-width: 100px;
+    margin-right: auto;
 }
 
-.menu a{
+.menu{
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: right;
+    margin-left: 10px;
+}
+
+.menu .nav-link{
     display: block;
     padding: 15px 20px;
     color: white;
     text-decoration: none;
+}
 
+.search-bar{
+    width: 200px;
+}
+
+
+
+/*
+.menu ul ul{
+    display: none;
+    background-color: #472A85;
 }
 
 .menu a:hover{
@@ -54,11 +64,18 @@ header label{
     display: block;
     position: absolute;
 }
-
+*/
 /* BODY */
 
 body{
     background-color: #7353BA;
+    width: 50%; /* El 60% del ancho total de la pantalla */
+    margin: 0 auto; /* Centrar el contenido en la pantalla */
+    padding: 20px;
+}
+
+.banner-roulette img{
+    max-width: 100%;
 }
 
 .portada {
@@ -74,27 +91,17 @@ body{
     max-height: 100px;
 }
 
-/*.portada .category_elements ul{
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-}*/
+footer{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+}
 
-/*.portada .category_elements ul li{
-    text-decoration: none;
-    font-size: 30px;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-}*/
-
-/*.portada .category_elements ul li:hover {
-    background: rgb(0,0,0,0.3);
-    cursor: pointer;
-}*/
+/*
 .categories {
-    width: 30%; /* o cualquier otro valor */
-    /*margin: left; /* para centrar el contenido */
+    width: 30%;
+    margin: left;
 }
 
 
@@ -131,10 +138,10 @@ body{
 }
 
 #register label {
-    margin-bottom: 10px; /* agregar margen inferior */
+    margin-bottom: 10px; /* agregar margen inferior
 }
 #register input {
-    margin-bottom: 20px; /* agregar margen inferior */
+    margin-bottom: 20px; /* agregar margen inferior
 }
 
 #login_items{
@@ -166,12 +173,7 @@ body{
     display: grid;
 }
 
-footer{
-    color: white;
-    position: absolute; /* o "fixed" si deseas que el footer se mantenga fijo en la pantalla */
-    bottom: 0; /* para que se sitúe en la parte inferior */
-    width: 100%; /* para que ocupe todo el ancho de la pantalla */
-}
+
 .categories h1 {
     font-size: 30px;
 }
@@ -179,7 +181,7 @@ footer{
     font-size: 30px;
 }
 
-/* Carrito */
+/* Carrito
 .CartPhoto {
     width: 100px;
     height: 150px;
@@ -210,3 +212,4 @@ footer{
     font-family: Arial Black,Arial Bold,Gadget,sans-serif;
     font-size: 30px;
 }
+
